@@ -2,54 +2,82 @@ import 'package:flutter_application_1/models/quiz_question.dart';
 
 const questions = [
   QuizQuestion(
-    'What are the main building blocks of Flutter UIs?',
-    [
-      'Widgets',
-      'Components',
-      'Blocks',
-      'Functions',
-    ],
-  ),
-  QuizQuestion('How are Flutter UIs built?', [
-    'By combining widgets in code',
-    'By combining widgets in a visual editor',
-    'By defining widgets in config files',
-    'By using XCode for iOS and Android Studio for Android',
-  ]),
-  QuizQuestion(
-    'What\'s the purpose of a StatefulWidget?',
-    [
-      'Update UI as data changes',
-      'Update data as UI changes',
-      'Ignore data changes',
-      'Render UI that does not depend on data',
-    ],
-  ),
-  QuizQuestion(
-    'Which widget should you try to use more often: StatelessWidget or StatefulWidget?',
-    [
-      'StatelessWidget',
-      'StatefulWidget',
-      'Both are equally good',
-      'None of the above',
-    ],
-  ),
-  QuizQuestion(
-    'What happens if you change data in a StatelessWidget?',
-    [
-      'The UI is not updated',
-      'The UI is updated',
-      'The closest StatefulWidget is updated',
-      'Any nested StatefulWidgets are updated',
-    ],
-  ),
-  QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
-    [
-      'By calling setState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
-    ],
-  ),
+  'At what age did Babar Azam make his ODI debut for Pakistan?',
+  [
+    '20',
+    '19',
+    '21',
+    '18',
+  ],
+),
+
+QuizQuestion(
+  'Against which team did Babar Azam make his T20I debut?',
+  [
+    'England',
+    'India',
+    'Zimbabwe',
+    'West Indies',
+  ],
+),
+
+QuizQuestion(
+  'In cricket, how many players are there in one team on the field?',
+  [
+    '11',
+    '10',
+    '12',
+    '9',
+  ],
+),
+
+QuizQuestion(
+  'What is the maximum number of overs a bowler can bowl in a standard ODI match?',
+  [
+    '10',
+    '8',
+    '12',
+    '6',
+  ],
+),
+
+QuizQuestion(
+  'Who won the ICC Cricket World Cup in 2019?',
+  [
+    'England',
+    'New Zealand',
+    'Australia',
+    'India',
+  ],
+),
+
+QuizQuestion(
+  'Which country won the first-ever ICC T20 World Cup in 2007?',
+  [
+    'India',
+    'Pakistan',
+    'Australia',
+    'West Indies',
+  ],
+),
+
+QuizQuestion(
+  'What does LBW stand for in cricket?',
+  [
+    'Leg Before Wicket',
+    'Left Bat Wide',
+    'Leg Beyond Width',
+    'Long Ball Wicket',
+  ],
+),
+
+QuizQuestion(
+  'How many runs are awarded if the ball crosses the boundary without touching the ground?',
+  [
+    '6',
+    '4',
+    '2',
+    '5',
+  ],
+)
 ];
