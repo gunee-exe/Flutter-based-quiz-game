@@ -39,6 +39,8 @@ class _QuizState extends State<Quiz> {
        void restartquiz (){
       setState(() {
         ActiveScreen = 'home-screen';
+        questions = [];
+         questions =selectRandomQuestions(Allquestions);
       });
       
     }
@@ -53,8 +55,7 @@ class _QuizState extends State<Quiz> {
       currentscreen = ResultScreen(restartquiz,selectedanswers);
     }
     if (ActiveScreen == 'home-screen')
-    {
-
+    {   
         currentscreen =StartScreen(switchscreen);
          if(selectedanswers.length == questions.length)
          {

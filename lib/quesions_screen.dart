@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'models/answerbutton.dart';
 import 'data/questions.dart';
 
+
 class QuestionScreen extends StatefulWidget {
   const QuestionScreen(this.onSelectanswer,{super.key});
   final void Function (String answer) onSelectanswer;
@@ -22,8 +23,10 @@ class _QuestionScreenState extends State<QuestionScreen> {
       currentquestionnumber++;
     });
   }
+  
 
   @override
+   
   Widget build(BuildContext context) {
     final currentquestion = questions[currentquestionnumber];
     return Center(

@@ -1,6 +1,6 @@
 import 'package:flutter_application_1/models/quiz_question.dart';
 
-const questions = [
+const Allquestions = [
   QuizQuestion(
   'At what age did Babar Azam make his ODI debut for Pakistan?',
   [
@@ -79,5 +79,151 @@ QuizQuestion(
     '2',
     '5',
   ],
+),
+QuizQuestion(
+  'Which cricketer is known as the "King of the Cover Drive"?',
+  [
+    'Babar Azam',
+    'Virat Kohli',
+    'Joe Root',
+    'Kane Williamson',
+  ],
+),
+
+QuizQuestion(
+  'Which country has won the most ICC Cricket World Cups?',
+  [
+    'Australia',
+    'India',
+    'West Indies',
+    'England',
+  ],
+),
+
+QuizQuestion(
+  'How many legal deliveries are there in an over in cricket?',
+  [
+    '6',
+    '8',
+    '5',
+    '4',
+  ],
+),
+
+QuizQuestion(
+  'Which country won the 1992 ICC Cricket World Cup?',
+  [
+    'Pakistan',
+    'England',
+    'Australia',
+    'New Zealand',
+  ],
+),
+
+
+QuizQuestion(
+  'Who was the first batsman to score a double century in ODI cricket?',
+  [
+    'Sachin Tendulkar',
+    'Rohit Sharma',
+    'Chris Gayle',
+    'Virender Sehwag',
+  ],
+),
+
+QuizQuestion(
+  'Which format of cricket is played over five days?',
+  [
+    'Test cricket',
+    'ODI cricket',
+    'T20 cricket',
+    'The Hundred',
+  ],
+),
+
+QuizQuestion(
+  'In cricket scoring, what does a “duck” mean?',
+  [
+    'Scoring zero runs',
+    'Scoring one run',
+    'Scoring a century',
+    'Scoring a half-century',
+  ],
+),
+
+QuizQuestion(
+  'Which country hosted the 2011 ICC Cricket World Cup final?',
+  [
+    'India',
+    'Sri Lanka',
+    'Bangladesh',
+    'Australia',
+  ],
+),
+
+QuizQuestion(
+  'Who holds the record for the highest individual score in a Test innings?',
+  [
+    'Brian Lara',
+    'Don Bradman',
+    'Virender Sehwag',
+    'Steve Smith',
+  ],
+),
+
+QuizQuestion(
+  'What is the term for a bowler taking three wickets in three consecutive balls?',
+  [
+    'Hat-trick',
+    'Five-for',
+    'Overthrow',
+    'Yorker',
+  ],
+),
+
+QuizQuestion(
+  'Which part of the cricket bat is used to hit the ball?',
+  [
+    'Blade',
+    'Handle',
+    'Grip',
+    'Toe',
+  ],
+),
+QuizQuestion(
+  'In which year did Imran Khan lead Pakistan to win the Cricket World Cup?',
+  [
+    '1992',
+    '1987',
+    '1996',
+    '1983',
+  ],
+),
+
+QuizQuestion(
+  'What was Imran Khan’s primary role in cricket?',
+  [
+    'All-rounder',
+    'Batsman',
+    'Wicketkeeper',
+    'Spin bowler',
+  ],
+),
+
+QuizQuestion(
+  'Against which team did Imran Khan play his final international cricket match?',
+  [
+    'England',
+    'India',
+    'Australia',
+    'New Zealand',
+  ],
 )
 ];
+var questions =selectRandomQuestions(Allquestions);
+
+List<QuizQuestion> selectRandomQuestions(List<QuizQuestion> Allquestions) {
+  final List<QuizQuestion> questions = List.of(Allquestions);
+  questions.shuffle();
+  return questions.take(8).toList();
+}
