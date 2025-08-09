@@ -4,9 +4,9 @@ const Allquestions = [
   QuizQuestion(
   'At what age did Babar Azam make his ODI debut for Pakistan?',
   [
-    '20',
-    '19',
     '21',
+    '19',
+    '14',
     '18',
   ],
 ),
@@ -218,7 +218,65 @@ QuizQuestion(
     'Australia',
     'New Zealand',
   ],
-)
+),
+QuizQuestion(
+  'Which city was Babar Azam born in?',
+  [
+    'Lahore',
+    'Karachi',
+    'Rawalpindi',
+    'Islamabad',
+  ],
+),
+
+QuizQuestion(
+  'In which year did Babar Azam make his Test debut?',
+  [
+    '2016',
+    '2015',
+    '2017',
+    '2018',
+  ],
+),
+
+QuizQuestion(
+  'Babar Azam scored his first ODI century against which team?',
+  [
+    'West Indies',
+    'Zimbabwe',
+    'Sri Lanka',
+    'New Zealand',
+  ],
+),
+QuizQuestion(
+  'What was Imran Khan’s bowling style?',
+  [
+    'Right-arm fast',
+    'Left-arm spin',
+    'Right-arm medium',
+    'Left-arm fast',
+  ],
+),
+
+QuizQuestion(
+  'Which year did Imran Khan make his Test debut for Pakistan?',
+  [
+    '1971',
+    '1975',
+    '1973',
+    '1977',
+  ],
+),
+
+QuizQuestion(
+  'Imran Khan captained Pakistan in how many World Cups?',
+  [
+    '3',
+    '2',
+    '4',
+    '1',
+  ],
+),
 ];
 var questions =selectRandomQuestions(Allquestions);
 
