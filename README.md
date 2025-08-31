@@ -47,7 +47,7 @@ flutter run
 
 📷 Demo
 
-![App Demo](asset/demo.mp4)
+![App Demo](asset/demo.gif)
 
 🤝 Contribution
 
